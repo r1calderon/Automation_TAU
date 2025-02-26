@@ -15,13 +15,14 @@ public class SalaryCalculator {
 
         //Initialize known values
         double salarioSemana = 1000;
+        int bonus;
         System.out.println("Porfavor indica el numero de ventas de esta semana");
         Scanner scanner = new Scanner(System.in);
         int numVentas = scanner.nextInt();
         scanner.close();
         //Get values for the Unknown
         if (numVentas >= 10) {
-           int bonus = 250;
+           bonus = 250;
         }
             else{
                 bonus = 0;
